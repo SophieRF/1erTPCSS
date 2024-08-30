@@ -1,0 +1,106 @@
+.h1{
+    background-color: rgb(119, 175, 156);
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: larger;
+    font-weight: bold;
+    padding: 10px;
+}
+.p1{
+    margin-left: 10px;
+    margin-bottom: 0px;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.div1{
+    background-color: rgb(243, 243, 243);
+}
+.bq1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.caja1{
+    width: 500px;
+    padding-left: 10px;
+    margin: 10px;
+    border: 1px solid black;
+    box-shadow:4px 4px 6px black;
+}
+.caja2{
+    width: 500px;
+    padding-left: 10px;
+    margin: 10px;
+    border: 2px solid black;
+    box-shadow:4px 4px 6px black;
+    background-color: rgb(236, 217, 162);
+}
+.relativo{
+    position: relative;
+    top: 4px;
+    left:10px;
+    background-color: rgb(177, 165, 189);
+    padding: 8px;
+    margin-bottom: 40px;
+}
+.absoluto{
+    position: absolute;
+    padding-left: 8px;
+    padding-right: 8px;
+    top: 26px;
+    left: 200px;
+    background-color: rgb(119, 119, 196);
+}
+@media screen and (max-width: 768px){
+    body{
+        background-color: rgb(197, 197, 197);
+        padding: 2px 20px 20px 20px;
+    }
+    main{
+        background-color: aliceblue;
+    }
+    .h1{
+        font-size: small;
+    }
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-row: inherit;
+    gap: 1rem;
+    width: calc(100% - 60px); 
+    height: 50px; 
+    margin: 30px;
+}
+.grid-item{
+    background-color: rgb(145, 49, 68);
+    text-align: center;
+    border-radius: 3px;
+}
+.mover{
+    width: 200px;
+    height: 200px;
+    background-color: cornflowerblue;
+    border-radius: 50%;
+    animation: mover 3s infinite;
+}
+@keyframes mover {
+    0%{
+        transform: translate(0);
+    }
+    50%{
+        transform: translate(600px);
+    }
+    100%{
+        transform: translate(200px);
+    }
+}
+.animacion{
+    width: 160px;
+    height: 160px;
+    background-color: darkslategray;
+    margin: 10px;
+    transition: 0.8s ease;
+}
+.animacion:hover{
+    cursor: pointer;
+    background-color: dimgrey;
+}
